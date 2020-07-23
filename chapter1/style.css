@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: aqua;
+    color: black;
+    line-height: 1.6em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 1em;
+}
+.container{
+    max-width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+}
+ul{
+    list-style: none;
+    padding: 0em;
+}
+.brand{
+    text-align: center;
+}
+.brand span{
+    color: crimson;
+}
+.wrap{
+    box-shadow: 5px 5px 30px 5px blue;
+}
+.wrap > *{
+    padding: 1em;
+}
+.company-info{
+    background-color: rgb(119, 174, 247);
+}
+.company-info h3, .company-info ul{
+    text-align: center;
+    margin:1rem 0px 1rem 0px;
+}
+.contactus{
+    background-color: cornsilk;
+}
+.contactus form{
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ grid-gap: 20px;
+}
+
+.contactus form label{
+    display: block;
+}
+.contactus form p{
+    margin:2px;
+}
+.contactus form .full{
+    grid-column: 1 / 3;
+}
+.contactus form button, .contactus form input, .contactus form textarea{
+    width: 100%;
+    padding: 1em;
+    border: 2px solid rgb(54, 240, 215);
+}
+.contactus form button{
+    background-color: darkgrey;
+    color: white;
+    border: 0;
+}
+.contactus form button:hover, .contactus form button:focus{
+    background-color: turquoise;
+    color: black;
+    outline:0;
+    transition: background-color 2s ease-out;
+}
+@media(min-width:700px){
+    .wrap{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    .wrap >*{
+        padding: 2em;
+    }
+    .company-info h3, .company-info ul, .brand{
+        text-align: left;
+    }
+}
